@@ -13,23 +13,23 @@ The project processes raw leaf images through a structured matrix manipulation p
  2. Segmentation: RGB to HSV/Lab Conversion -> K-Means Clustering -> Binary Disease Mask
  3. Feature Analysis: Connected Components -> GLCM Texture Extraction -> Infection Percentage Calculation
 Infection % = (Disease Cluster Pixels / Total Leaf Pixels) * 100
-## Repository Structure
-plant-disease-detection/
+```text
+Plant-disease-detection/
 │
 ├── data/
 │   └── sample_leaves/          # Demo images (Healthy, Rust, Spot, etc.)
 │
 ├── src/
-│   ├── **init**.py
-│   ├── preprocessing.py        # Image resizing, filtering, and enhancement
-│   ├── segmentation.py         # HSV Masking & K-Means Engine
-│   ├── feature_extractor.py    # GLCM features and area calculation
-│   └── classifier.py           # Disease category prediction logic
+│   ├── __init__.py
+│   ├── preprocessing.py       # Image resizing, filtering, and enhancement
+│   ├── segmentation.py        # HSV Masking & K-Means Engine
+│   ├── feature_extractor.py   # GLCM features and area calculation
+│   └── classifier.py          # Disease category prediction logic
 │
-├── app.py                      # Streamlit UI Application
-├── requirements.txt            # Project dependencies
-├── notebook_demo.ipynb         # Step-by-step visual walkthrough
-└── README.md                   # Project documentation
+├── app.py                     # Streamlit UI Application
+├── requirements.txt           # Project dependencies
+├── notebook_demo.ipynb        # Step-by-step visual walkthrough
+└── README.md                  # Project documentation
 ## Installation and Setup
 ### 1. Clone the Repository
 ~~~bash
